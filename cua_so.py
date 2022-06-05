@@ -86,7 +86,7 @@ def draw_image(image_list, x, y, width, height):
 # running game
 exit = False
 result = None
-hint_image_list = ["example.png"]
+hint_image_list = ["Da_Nang.png"]
 image_position = ((30, 100), (30, 400))
 while not exit:
     for event in pygame.event.get():
@@ -97,7 +97,7 @@ while not exit:
             exit = True
     screen.blit(wordle, wordle.get_rect(center = (x_namegame - 90, 20)))
     screen.blit(vietnam, vietnam.get_rect(center = (x_namegame + 90, 20)))
-    draw_image(["DaNang.png"], image_position[0][0], image_position[0][1], 370, 250)
+    draw_image(["Da_Nang.png"], image_position[0][0], image_position[0][1], 370, 250)
     if result == "win":
         winning_rect = button((0,150,0), x_mid - 250, y_mid - 100, 500, 200, 'You win', 100, (255, 255, 0))
         winning_rect.draw(screen)
